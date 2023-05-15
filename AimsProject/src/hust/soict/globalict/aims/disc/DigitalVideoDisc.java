@@ -10,7 +10,7 @@ public class DigitalVideoDisc {
 	private static int nbDigitalVideoDiscs = 0;
 	
 	// Create an instance attribute named "id" 
-	private int id; ,
+	private int id; 
 	
 	public String getTitle() {
 		return title;
