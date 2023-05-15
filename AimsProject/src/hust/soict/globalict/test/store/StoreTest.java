@@ -19,27 +19,22 @@ public class StoreTest {
         store.addDVD(dvd3);
         store.addDVD(dvd4);
         store.addDVD(dvd5);
-        System.out.println("");
+        
         // Display all the DVDs in the store after adding
-        System.out.println("Display all the DVDs in the store after adding");
+        System.out.println("Display all the DVDs in the store currently");
         store.displayDVDs();
-        System.out.println("");
         
         // Try to add one more DVD (store is already full)
         DigitalVideoDisc dvd6 = new DigitalVideoDisc("The Shawshank Redemption", "Drama", "Frank Darabont", 142, 17.99f);
         store.addDVD(dvd6);
-        System.out.println("");
 
         // Remove a DVD from the store
         store.removeDVD(dvd3);
-        System.out.println("");
         
         // Display all the DVDs in the store after removing
-        System.out.println("Display all the DVDs in the store after removing");
+        System.out.println("Display all the DVDs in the store after currently");
         store.displayDVDs();
-        System.out.println("");
         
-
         // Try to remove a DVD that is not in the store
         DigitalVideoDisc dvd7 = new DigitalVideoDisc("Frozen", "Animation", "Chris Buck", 102, 14.99f);
         store.removeDVD(dvd7);
