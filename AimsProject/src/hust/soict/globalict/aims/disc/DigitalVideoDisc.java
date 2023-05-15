@@ -5,11 +5,7 @@ public class DigitalVideoDisc {
 	private String director;
 	private int length;
 	private float cost;
-	
-	// Create a class attribute named "nbDigitalVideoDiscs" 
 	private static int nbDigitalVideoDiscs = 0;
-	
-	// Create an instance attribute named "id" 
 	private int id; ,
 	
 	public String getTitle() {
