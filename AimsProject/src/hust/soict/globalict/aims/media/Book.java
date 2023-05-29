@@ -12,7 +12,11 @@ public class Book extends Media {
     public Book(String title, String category, float cost) {
         super(title, category, cost);
     }
-	
+    
+    public Book(String title, String category, String author, float cost) {
+        super(title, category, cost);
+    }
+
 	public List<String> getAuthors() {
 		return authors;
 	}
@@ -37,5 +41,10 @@ public class Book extends Media {
         } else {
             System.out.println("Author " + authorName + " is not associated with the book.");
         }
+    }
+    
+    @Override
+    public String toString() {
+        return "Book - " + getTitle() + " - " + getCategory() + ": " + getCost();
     }
 }
