@@ -58,13 +58,6 @@ Question: When overriding the equals() method of the Object class, you will have
 
 --> Answer: The equals() method should return 'false'
 
-
-11. Polymorphism with toString() method
-
-Question: Iterate through the list and print out the information of the media by using toString() method. Observe what happens and explain in detail.
-
---> Answer: 
-
 12. Sort media in the cart
 
 Question: Alternatively, to compare items in the cart, instead of using Comparator, we can use the Comparable interface and override the compareTo()method. You can refer to the Java docs to see the information of this interface.
