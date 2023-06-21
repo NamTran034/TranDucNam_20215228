@@ -17,6 +17,10 @@ public class Book extends Media {
         super(title, category, cost);
     }
 
+	public Book(String title, String category) {
+		super(title, category);
+	}
+
 	public List<String> getAuthors() {
 		return authors;
 	}

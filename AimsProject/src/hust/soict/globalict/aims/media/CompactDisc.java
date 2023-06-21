@@ -12,7 +12,12 @@ public class CompactDisc extends Disc implements Playable {
         tracks = new ArrayList<>();
     }
 
-    public String getArtist() {
+    public CompactDisc(String title, String artist) {
+		super(title);
+		this.artist = artist;
+    }
+
+	public String getArtist() {
         return artist;
     }
 
