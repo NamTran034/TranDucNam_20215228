@@ -198,23 +198,23 @@ public class Aims {
         }
     }
 
-    public void sortMediaInCart() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter 1 to sort by title, or 2 to sort by cost: ");
-        int choice = scanner.nextInt();
-
-        if (choice == 1) {
-            currentCart.sort(new Media.TitleComparator());
-            System.out.println("Media in cart sorted by title:");
-            displayMediaList(currentCart);
-        } else if (choice == 2) {
-            currentCart.sort(new Media.CostComparator());
-            System.out.println("Media in cart sorted by cost:");
-            displayMediaList(currentCart);
-        } else {
-            System.out.println("Invalid choice.");
-        }
-    }
+//    public void sortMediaInCart() {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter 1 to sort by title, or 2 to sort by cost: ");
+//        int choice = scanner.nextInt();
+//
+//        if (choice == 1) {
+//            currentCart.sort(new Media.TitleComparator());
+//            System.out.println("Media in cart sorted by title:");
+//            displayMediaList(currentCart);
+//        } else if (choice == 2) {
+//            currentCart.sort(new Media.CostComparator());
+//            System.out.println("Media in cart sorted by cost:");
+//            displayMediaList(currentCart);
+//        } else {
+//            System.out.println("Invalid choice.");
+//        }
+//    }
 
     public void removeMediaFromCart() {
         Scanner scanner = new Scanner(System.in);

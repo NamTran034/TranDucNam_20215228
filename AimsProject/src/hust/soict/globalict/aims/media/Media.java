@@ -57,7 +57,12 @@ public abstract class Media {
         this.cost = cost;
     }
     
-    public static class MediaComparatorByCostTitle implements Comparator<Media> {
+    public Media(String title, String category) {
+		this.title = title;
+		this.category = category;
+	}
+
+	public static class MediaComparatorByCostTitle implements Comparator<Media> {
         @Override
         public int compare(Media media1, Media media2) {
             int result = media1.getTitle().compareTo(media2.getTitle());

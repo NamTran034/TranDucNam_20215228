@@ -1,9 +1,14 @@
 package hust.soict.globalict.aims.cart;
+
 import hust.soict.globalict.aims.media.Media;
+import javafx.beans.property.FloatProperty;
+import javafx.beans.property.SimpleFloatProperty;
+
 import java.util.ArrayList;
 
 public class Cart {
 	private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+	private FloatProperty totalCostProperty = new SimpleFloatProperty(0);
 	
 	public void addMedia(Media media) {
         itemsOrdered.add(media);
@@ -65,5 +70,25 @@ public class Cart {
         if (!found) {
             System.out.println("No matching media found with title: " + title);
         }
+    }
+    
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+    
+    private void updateTotalCost() {
+        float total = 0;
+        for (Media media : itemsOrdered) {
+            total += media.getCost();
+        }
+        totalCostProperty.set(total);
+    }
+
+    public float getTotalCost() {
+        return totalCostProperty.get();
+    }
+
+    public FloatProperty getTotalCostProperty() {
+        return totalCostProperty;
     }
 }
